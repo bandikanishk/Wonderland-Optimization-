@@ -519,8 +519,10 @@ class WonderlandTrip:
         #Prints path, time used, remaining and any rides left over
         print("\n===== TRIP RESULTS =====\n")
         print("Ride Path:")
-        for ride in range(len(path) - 1):
-            print(f"{path[ride]} ---> {path[ride+1]}", end=" ")
+        if len(path) > 0:
+            print('-> '.join(path))
+        else:
+            print("No ride path found.")
 
         print(f"\nTotal Time Used: {total_time} minutes")
         print(f"Time Remaining: {time_left} minutes")
@@ -584,7 +586,7 @@ class WonderlandTrip:
         print("Best ride order: ")
         print(" → ".join(best_path))
         print("\nFull path (Shows path from entrance and what rides to go past):")
-        print(" → ".join(full_path))
+        print(" -> ".join(full_path))
         print("\nTotal time:", round(time_used, 2))
 
     def get_user_rides(self) -> List[str]:
