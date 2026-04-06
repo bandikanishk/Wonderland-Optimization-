@@ -581,9 +581,9 @@ class WonderlandTrip:
             full_path.extend(route[1:])
             current = ride
 
-        print("Best ride order (Shows which rides to go past to get to the rides you want): ")
+        print("Best ride order: ")
         print(" → ".join(best_path))
-        print("\nFull path:")
+        print("\nFull path (Shows path from entrance and what rides to go past):")
         print(" → ".join(full_path))
         print("\nTotal time:", round(time_used, 2))
 
