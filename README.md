@@ -27,7 +27,7 @@ The program provides two planning options:
 1. Make sure Python 3.11 is installed
 
 2. Install required library:
-   pip install requests
+   pip install Requirements
 
 3. Run the program:
    python main.py
@@ -46,7 +46,7 @@ The program provides two planning options:
 ## FILES INCLUDED
 - main.py       (main program)
 - adts.py            (priority queue ADT)
-- requirements.txt   (dependencies)
+- Requirements.txt   (dependencies)
 - README.txt         (this file)
 - USER_GUIDE.txt     (detailed user instructions)
 
